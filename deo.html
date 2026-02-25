@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>O-LEVEL STUDENT MANAGEMENT SYSTEM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<form id="studentForm">
+  <input type="text" id="studentId" placeholder="Student ID" required>
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email Address" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <input type="number" id="age" placeholder="Age" required>
+
+  <select id="gender" required>
+    <option value="">Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+
+  <select id="form" required>
+    <option value="">Current Form</option>
+    <option value="1">Form 1</option>
+    <option value="2">Form 2</option>
+    <option value="3">Form 3</option>
+    <option value="4">Form 4</option>
+  </select>
+
+  <div class="buttons">
+    <button type="submit">Continue</button>
+    <button type="reset" class="back">Back</button>
+  </div>
+</form>
+
+<h2>Student List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Form</th>
+      <th>Average</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="studentTable"></tbody>
+</table>
+
+<h2>Add Performance</h2>
+
+<form id="performanceForm">
+  <input type="text" id="perfId" placeholder="Student ID" required>
+  <input type="number" id="math" placeholder="Math" required>
+  <input type="number" id="english" placeholder="English" required>
+  <input type="number" id="science" placeholder="Science" required>
+  <input type="number" id="social" placeholder="Social Studies" required>
+
+  <div class="buttons">
+    <button type="submit">Continue</button>
+    <button type="reset" class="back">Back</button>
+  </div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
